@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#container{
+    height: 99vh;
+    width: 90vh;
+
+
+    background-color: aquamarine;
+
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    text-align: center;
+    color: black;
+
+    display: grid;
+
+}
+
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+
+input{
+    margin-left: 25px;
+    margin-right: 10px;
+}
+label{
+    font-size: large;
+    color: yellow;
+}
+
+form{
+    height: 90vh;
+    background-color: aqua;
+
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    color: black;
+}
+
+.question{
+    background-color: black;
+    color: white;
+
+    padding: 0.5rem;
+    text-align: left;
+}
+
+button{
+    justify-self: center;
+    margin-top: 0.5rem;
+    width: 60%;
+
+
+    background-color: rgb(96, 172, 238);
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+
+    
+}
+#reset{
+    margin-top: 0.2rem;
+    width: 25%;
+    background-color: crimson;
+}
+#nextQuiz{
+    margin-left: 9%;
+    margin-top: 0.2rem;
+    width: 25%;
+    background-color: yellowgreen;
+}
+
+
+
+
+
+
+
+#result{
+    width: 400px;
+    height: 125px;
+
+    background-color: yellowgreen;
+    color:white;
+
+    border-radius: 20px;
+    text-align: center;
+    padding: 2.5rem;
+
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 1000;
+    animation: resultshow 5s forwards;
+}
+@keyframes resultshow {
+    0%{
+        transform: translate(-50%, -50%) scale(0);
+        font-size: x-large;
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(2);
+        font-size: xx-large;
+        opacity: 1;
+    }
+}
+
+
