@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revised/Homework</title>
+</head>
+<body>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Practice 1</h1>
+        <table border="2" cellpadding="5">
+            <caption>Nested Tables</caption>
+            <tbody>
+                <tr>
+                    <td>Main Table row 1 column 1</td>
+                    <td>
+                        <table border="1">
+                            <caption>Main Table column 2</caption>
+                            <tbody>
+                                <tr>
+                                    <td>Inner Table row 1 column 1</td>
+                                    <td>Inner Table row 1 column 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Inner Table row 2 column 1</td>
+                                    <td>Inner Table row 2 column 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Inner Table row 3 column 1</td>
+                                    <td>Inner Table row 3 column 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Main Table row 2 column 1</td>
+                    <td>Main Table row 2 column 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br>
+
+        <h1>Practice 2</h1>
+        <table border="2" cellpadding="5">
+            <caption>My Multi Level Table</caption>
+            <!-- <thead>
+                <tr>
+                    <th>Column 0</th>
+                    <th>Column 1</th>
+                    <th>Column 2
+                        <table border="2">
+                            <thead><tr>
+                                <th>Column 2a</th>
+                                <th>Column 2b</th>
+                            </tr></thead>
+                        </table>
+                    </th>
+                </tr>
+            </thead> -->
+            
+            <tbody>
+                <tr>
+                    <td rowspan="2" colspan="2">Column 0</td>
+                    <td rowspan="2">Column 1</td>
+                    <td colspan="2">column 2</td>
+                </tr>
+                <tr>
+                    <td>Column 2a</td>
+                    <td>Column 2b</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Row 1</td>
+                    <td>Row 1a</td>
+                    <td>123</td>
+                    <td>456</td>
+                    <td>789</td>
+                </tr>
+                <tr>
+                    <td>Row 1b</td>
+                    <td>123</td>
+                    <td>456</td>
+                    <td>789</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Row 2</td>
+                    <td>123</td>
+                    <td>456</td>
+                    <td>789</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br>
+
+        <h1>Practice 3</h1>
+        <table border="2" cellpadding="5">
+            <caption>Nested Tables</caption>
+            <tbody>
+                <tr>
+                    <td>Main Table row 1 column 1</td>
+                    <td>
+                        <table border="2">
+                            <caption>Main Table Column 2</caption>
+                            <tr>
+                                <td>Inner Table row 1 column 1</td>
+                                <td>Inner Table row 1 column 2</td>
+                            </tr>
+                            <tr>
+                                <td>Inner Table row 2 column 1</td>
+                                <td>Inner Table row 2 column 2</td>
+                            </tr>
+                            <tr>
+                                <td>Inner Table row 3 column 1</td>
+                                <td>Inner Table row 3 column 2</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Main Table row 2 column 1</td>
+                    <td>Main Table row 2 column 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br>
+
+        <h1>Practice 4</h1>
+        <h2>Feedback Form</h2>
+        <form>
+            <label for="name">Your Name: </label>
+            <input type="text" id="name" name="UserName" required>
+            <br><br>
+            
+            <label for="email">Your Email: </label>
+            <input type="email" id="email" name="UserEmail" required>
+            <br><br>
+            
+            <label>Rate Us: </label>
+            <input type="radio" name="Rating" id="1s" value="1"> <label for="1s">1 Star</label>
+            <input type="radio" name="Rating" id="2s" value="2"> <label for="2s">2 Star</label>
+            <input type="radio" name="Rating" id="3s" value="3"> <label for="3s">3 Star</label>
+            <input type="radio" name="Rating" id="4s" value="4"> <label for="4s">4 Star</label>
+            <input type="radio" name="Rating" id="5s" value="5"> <label for="5s">5 Star</label>
+            <br><br><br> 
+
+            <label for="comment">Comments: </label>
+            <textarea name="feedback" id="comment" cols="40" rows="5"></textarea>
+            <br><br>
+
+            <button>Submit Feedback</button>
+        </form>     
+
+    </body>
+
+    <br><br><br>
+
+    <h1>Practice 5</h1>
+    <h2>Health Details Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="pname">Full Name: </label>
+            <input type="text" id="pname" name="PatientName" required>
+            <br><br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="PatientDOB" required>
+            <br><br><br>
+
+            <label for="gender">Gender: </label>
+            <select name="Gender" id="gender">
+                <option value="" disabled selected>Select the Gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+            </select>
+            <br><br><br>
+
+            <label for="phnNUM">Phone Number: </label>
+            <input type="tel" id="phnNUM" name="MobileNum" required>  
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Medical History</legend>
+            <label for="blood">Blood Group: </label>
+            <select name="bloodGroup" id="blood">
+                <!-- ABO system: A B AB O       Rh system: A+ A- B+ B- O+ O- AB+ AB- -->
+                <option value="" disabled selected>Select your Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <br><br><br>
+
+            <label>Do you wear Glasses or Contact Lenses</label>
+            <br>
+            <input type="radio" name="lens" value="Yes" id="Yes"><label for="Yes">Yes</label>
+            <br>
+            <input type="radio" name="lens" value="No" id="No"><label for="No">No</label>
+            <br><br><br>
+
+            <label for="condition">Pre-existing Condition: </label>
+            <br>
+            <textarea name="MedicalCondition" id="condition" placeholder="List any pre-existing Medical Conditions" rows="5" cols="50"></textarea>
+            <br><br><br>
+            <label>Allergies: </label>
+            <br>
+            <input type="checkbox" name="Allergies" value="Pollen" id="pol"><label for="pol">Pollen</label><br>
+            <input type="checkbox" name="Allergies" value="Peanuts" id="pea"><label for="pea">Peanuts</label><br>
+            <input type="checkbox" name="Allergies" value="Latex" id="lat"><label for="lat">Latex</label><br>
+            <input type="checkbox" name="Allergies" value="None" id="no"><label for="no">None</label>
+            <br><br><br>
+
+            <label for="currmedi">Current Medications: </label>
+            <br>
+            <textarea name="currentMedic" id="currmedi" placeholder="List any Current Medications" rows="5" cols="50"></textarea>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            <label for="emrName">Emergency Contact Name: </label>
+            <input type="text" id="emrName" name="emrName">
+            <br><br>
+            <label for="emrCont">Emergency Contact Number: </label>
+            <input type="tel" id="emrCont" name="emrPhn">
+            <br><br>
+            <label for="emrRel">Relationship to Emergency Contact Name: </label>
+            <input type="text" id="emrRel" name="emrRel">
+        </fieldset>
+            <br><br>
+
+        <button>Submit</button>
+    </form>
+
+
+    <footer></footer>
+</body>
+</html>
