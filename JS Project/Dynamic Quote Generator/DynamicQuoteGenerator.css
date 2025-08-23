@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    width: 50vw;
+    height: 50vh;
+
+    background-color: white;
+
+    text-align: center;
+
+    border: solid white;
+    border-radius: 20px;
+}
+
+h1{
+    padding: 2rem;
+    
+    font-size: 3em;
+}
+
+#quote{
+    background-color: aliceblue;
+    height: 25vh;
+    margin: 0 2rem 2rem 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 5px solid rgb(111, 175, 227);
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    padding: 2rem;
+}
