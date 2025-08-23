@@ -1,0 +1,572 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+
+    background-color: rgb(235,235,235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Header */
+.brand{
+    height: 65px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand:hover{
+    background: linear-gradient(rgb(219, 58, 219), rgb(222, 190, 130));
+    color: white;
+
+}
+
+
+
+
+
+
+
+/* First Header */
+.first{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.second{
+    width: 30vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.fh{
+    height: 35px;
+}
+
+.flogo{
+    font-size: x-large;
+}
+
+
+.fsearchbar{
+    width: 600px;
+    max-width: 80%;
+    height: 35px;
+}
+.searchbar{
+    width: 600px;
+    max-width: 80%;
+    height: 35px;
+
+    border: 5px solid whitesmoke;
+}
+
+.flocation,.fsignin,.fsidebar{
+    width: 115px;
+}
+
+
+#loclist{
+    width: 100px;
+    height: 30px;
+
+    border: white;
+}
+.sign{
+    width: 75px;
+    height: 30px;
+
+    color: white;
+    font-size: 15px;
+
+    border: rgb(213, 92, 92);
+    background-color: rgb(213, 92, 92);
+}
+.fsidebar{
+    height: 30px;
+    font-size: x-large;
+}
+
+
+
+
+/* Third Header */
+.third{
+    width: 100vw;
+
+    height: 40px;
+
+    background-color: rgb(245,245,245);
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    align-items:last baseline;
+}
+
+.sh1{
+    width: 630px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+
+.sh2{
+    width: 430px;
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+}
+
+.nav{
+    background-color: rgb(245,245,245);
+    border: rgb(245,245,245);
+
+    border-bottom: 2px solid rgb(245,245,245);
+    font-size: large;
+    color: rgb(89, 81, 81);
+}
+.nav:hover{
+    cursor: pointer;
+
+    border-bottom-color: red;
+}
+
+
+/* Main */
+.main1{
+    width: 100%;
+    height: 275px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.ad{
+    width: 1240px;
+    height: 225px;
+    border-radius: 10px;
+
+    margin-right: 20px;
+}
+
+
+
+
+.main2{
+    margin-top: 20px;
+
+    height: 555px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+}
+.movielist{
+    height: 515px;
+    width: 1240px;
+}
+
+.MVdetail{
+    width: 1240px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-content: baseline;
+
+    margin-bottom: 10px;
+}
+
+.recom{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+.see{
+    font-size: large;
+    color: crimson;
+    align-self: flex-end;
+}
+
+.MVimg{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.card1{
+  height: 470px;  
+}
+
+.cardimg, .cardpic{
+    width: 231px;
+    height: 380px;
+
+    border-radius: 10px;
+}
+
+.cardname{
+    width: 180px;
+    height: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+    margin-top: 4px;
+    padding-top: 4px;
+}
+.cardgenre{
+    width: 190x;
+    height: 25px;
+}
+
+
+
+
+.main3{
+    height: 215px;
+    padding-bottom: 48px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+.stream{
+    height: 105px;
+
+}
+
+
+.main4{
+    height: 355px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+.eventlist{
+    height: 355px;
+}
+
+.event{
+    width: 1240px;
+    height: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+.eventcontainer{
+    width: 1240px;
+    height: 315px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.evcard{
+    height: 225px;
+    border-radius: 20px;
+}
+.evimg{
+    height: 225px;
+    border-radius: 15px;
+}
+
+
+
+
+.main5{
+    height: 620px;
+    background-color: rgb(43, 49, 72);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.premiere{
+    width: 1240px;
+    height: 485px;
+}
+
+.watch{
+    width: 1240px;
+    height: 105px;
+
+    margin-bottom: 40px;
+}
+
+.premidescrp{
+    height: 60px;
+    color: white;
+}
+
+.premicard{
+    width: 1240px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+.premipic, .premiimg{
+    width: 225px;
+    height: 335px;
+
+    border-radius: 10px;
+}
+
+.descrp1{
+    font-size: x-large;
+    font-weight: bold;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.preminame{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 10px 0 5px 0;
+}
+.premilang{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main6{
+    margin-top: 32px;
+
+    height: 615px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.music{
+    width: 1240px;
+    height: 615px;
+}
+.musicdetail{
+    width: 1240px;
+    height: 30px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+.mdet1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+.mdet2{
+    font-size: large;
+    color: crimson;
+    align-self: flex-end;
+}
+
+.musiclist{
+    width: 1240px;
+    height: 515px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.musicpic, .musicimg{
+    height: 380px;
+
+    border-radius: 10px;
+}
+.mp1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+    margin: 10px 0 5px 0;
+    width: 220px;
+
+}
+.mp2, .mp3{
+    width: 220px;
+}
+
+
+
+
+/* Media query for Below 1250 */
+/* ... [your existing CSS] ... */
+
+/* Responsive for Tablet (≤900px) */
+@media (max-width: 900px) {
+    .brand,
+    .first,
+    .second,
+    .third,
+    .MVimg,
+    .eventcontainer,
+    .premicard,
+    .musiclist {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+    }
+    .brand {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .first, .second {
+        width: 100vw;
+        justify-content: flex-start;
+    }
+    .fsearchbar {
+        width: 80vw;
+        min-width: 180px;
+    }
+    .main1, .ad,
+    .main2, .movielist,
+    .main4, .eventlist,
+    .main5, .premiere,
+    .premicard,
+    .main6, .music,
+    .musiclist {
+        width: 100vw;
+        min-width: 0;
+        margin: 0;
+    }
+    .card1, .evcard, .premipic, .musicpic {
+        width: 90vw !important;
+        height: auto !important;
+        margin-bottom: 12px;
+    }
+    .MVimg, .eventcontainer, .premicard, .musiclist {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .cardimg, .premiimg, .musicimg, .evimg {
+        width: 90vw !important;
+        height: auto !important;
+    }
+}
+
+/* Responsive for Mobile (≤600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 95%;
+    }
+    .brand, .first, .second, .third {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+    .fsearchbar {
+        width: 95vw;
+    }
+    .main1, .main2, .movielist, .main3, .main4, .eventlist, .main5, .premiere,
+    .main6, .music {
+        min-width: 0;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .MVimg, .eventcontainer, .premicard, .musiclist {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+    .card1, .evcard, .premipic, .musicpic {
+        width: 95vw !important;
+        height: auto !important;
+        margin: 0 0 15px 0!important;
+    }
+    .cardimg, .premiimg, .musicimg, .evimg {
+        width: 90vw !important;
+        height: auto !important;
+    }
+    .MVdetail, .event, .musicdetail {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .see, .mdet2 {
+        align-self: flex-start;
+        margin: 5px 0;
+    }
+    .third {
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+}
+
+/* Add a horizontal scroll on overflow sections for mobile */
+@media (max-width: 600px) {
+    .main1, .MVimg, .eventcontainer, .premicard, .musiclist {
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .card1, .evcard, .premipic, .musicpic {
+        min-width: 70vw !important;
+        margin-right: 10px;
+    }
+}
+
+
