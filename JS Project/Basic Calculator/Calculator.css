@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#container{
+    width: 90vh;
+    height: 750px;
+    background-color: cadetblue;
+    
+    display: grid;
+    gap: 0.5rem;
+
+    padding: 1rem;
+}
+
+
+
+#ans, #ip{
+    color: black;
+
+    border: 5px solid black;
+    border-radius: 10px;
+}
+#ans{
+    height: 120px;
+    font-size: 4rem;
+    text-align:end;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    padding: 1rem;
+
+
+    background-color: rgb(201, 238, 221);
+}
+#ip{
+    padding: 0.4rem 1rem 0;
+    background-color: rgb(223, 228, 131);
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+}
+
+input{
+    height: 40px;
+    text-align: center;
+
+    font-size: clamp(1rem, 4vw, xx-large);
+    font-weight: bolder;
+}
+
+
+.box13, .box46, .box79, .box31, .box64{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem;
+
+    justify-items: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+
+}
+
+.num, .opr{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+
+    font-size: xx-large;
+}
+
+#numEQ{
+    background-color: crimson;
+    border-radius: 20px;
+}
+#numADD, #numMIN, #numMUL, #numDIV{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
+}
+#resetbutton{
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: greenyellow;
+}
+
+
+
+
+
+
