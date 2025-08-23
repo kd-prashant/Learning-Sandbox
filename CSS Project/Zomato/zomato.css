@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+
+
+/* Header */
+.head{
+    background-color: aliceblue;
+
+    position: relative;
+}
+
+.first{
+    width: 1100px;
+    height: 72px;
+    margin-left: 20vw;
+
+    position: relative;
+}
+
+.bestfood{
+    width: 1100px;
+    margin-top: 20px;
+    margin-left: 20vw;
+}
+
+
+.logo{
+    width: 140px;
+    height: 30px;
+    pointer-events: none;
+}
+
+
+.brand, .searchbar, .login, .signup{
+    display: inline-block;
+    margin-top: 1vh;
+}
+.searchbar{
+    width: 600px;
+    height: 40px;
+    margin-left: 75px;
+    margin-right: 45px;
+
+    position: relative;
+    bottom: 5px;
+
+}
+.search{
+    width: 600px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-color: rgb(189, 195, 201);
+
+    padding-left: 5px;
+}
+
+
+
+.login, .sign{
+    width: 70px;
+    height: 40px;
+
+    border: aliceblue;
+    background-color: aliceblue;
+
+    font-size: large;
+}
+.login{
+    position: absolute;
+    right: 120px;
+}
+.signup{
+    position: absolute;
+    right: 20px;
+}
+.log, .sign{
+    width: 70px;
+    height: 40px;
+
+    border: aliceblue;
+    background-color: aliceblue;
+
+    font-size: larger;
+}
+
+
+
+/* Navigation */
+.second{
+    height: 78px;
+    background-color: aliceblue;
+
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+.nav1, .nav2, .nav3{
+    display: inline-block;
+
+    width: 210px;
+    height: 78px;
+
+    padding-top: 15px;
+}
+.din, .navimg{
+    width: 40px;
+    height: 40px;
+}
+
+
+.din, .dining, .delivery, .nigtlyf{
+    display: inline-block;
+
+    margin-left: 15px;
+}
+
+.dining, .delivery, .nigtlyf{
+    font-size: x-large;
+
+    position: relative;
+    bottom: 10px;
+}
+
+.nav1{
+    margin-left: 22vw;
+    border-bottom: 2px solid;
+    border-bottom-color: red;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Collection */
+.third{
+    height: 475px;
+    
+    padding-top: 15px;
+    padding-bottom: 40px;
+
+    background-color: rgb(235, 235, 235);
+}
+
+.collection{
+    margin-left: 21vw;
+}
+
+.col3{
+    font-size: xx-large;
+    font-weight: 500;
+
+    height: 62px;
+    padding-bottom: 20px;
+}
+
+.colline, .linkloc{
+    display: inline-block;
+}
+.colline{
+    font-size: larger;
+    color: rgb(72, 70, 70);
+    height: 27px;
+}
+.linkloc{
+    height: 24px;
+    position: relative;
+    left: 170px
+}
+
+a{
+    color: red;
+}
+
+.placebox1{
+    display: inline-block;
+    width: 260px;
+    height: 320px;
+}
+.picplace{
+    width: 260px;
+    height: 320px;   
+}
+
+
+.pb1{
+    margin-right: 3px;
+}
+
+
+
+/* Main: Best Food in Delhi NCR */
+#card1{
+    display: inline-block;
+
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 15px;
+
+    margin: 0 0px 10px 10px;
+}
+
+#card1:hover{
+    background-color:white;
+    cursor: pointer;
+}
+
+
+.pic, .detail, .foodtype, .courier {
+    padding-left: 6px;
+}
+
+.img{
+    width: 320px;
+    height: 250px;
+
+    border-radius: 15px;
+}
+.pic{
+    width: 320px;
+    height: 250px;
+    border-radius: 15px;
+
+    position: relative;
+}
+.off{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+
+    position: absolute;
+    top: 220px;
+}
+
+
+
+
+.detail, .foodtype, .courier{
+    width: 320px;
+    height: 25px;
+
+    display: inline-block;
+
+    position: relative;
+}
+
+.detail{
+    height: 35px;
+}
+.courier,.foodtype{
+    height: 20px;
+
+}
+
+
+
+.rstname, .rating{
+    display: inline-block;
+    margin: 8px 0 6px;
+}
+.rating{
+    height: 25px;
+    padding: 0 5px ;
+    border-radius: 20%;
+    
+    background-color: green;
+    color: white;
+    position: absolute;
+    right: 0;
+}
+.rstname{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.cuisine, .price{
+    display: inline-block;
+    padding: 0 0 4px;
+
+    color: rgb(67, 65, 65);
+}
+.cuisine{
+    width: 180px;
+    height: 20px;
+    overflow: hidden;
+
+}
+.price{
+    position: absolute;
+    right: 0;
+
+}
+
+.order, .dist{
+    display: inline-block;
+    padding: 0 0 4px;
+    color: grey;
+}
+.dist{
+    color: black;
+
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+
+
