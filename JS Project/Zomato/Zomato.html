@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+
+    <link rel="stylesheet" href="./Zomato.css">
+</head>
+<body>
+    <header>
+        <div id="headFirst">
+            <img src="./Media/zomato.png" alt="" id="logo">
+            <input type="search" name="resSearch" id= "resSearch"  placeholder="Search for Resturant, cuisine or a dish">
+            <div id="register">
+                <button type="button" id="log">Log in</button>
+                <button type="button" id="sign">Sign Up</button>
+            </div>
+        </div>
+        <div id="headSecond">
+            <nav id="nav1">
+                <img src="./Media/dining.png" alt="" class="navimg">    
+                Dining Out
+            </nav>
+            <nav id="nav2">
+                <img src="./Media/delivery.png" alt="" class="navimg">
+                Delivery
+            </nav>
+            <nav id="nav3">
+                <img src="./Media/nightlife.png" alt="" class="navimg">
+                Nightlife
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div id="filtering">
+            <button id="filter" class="filterOp">Filters</button>
+            <button id="offers" class="filterOp">Offers</button>
+            <button id="rating" class="filterOp">Rating 4.5+</button>
+            <button id="alcohol" class="filterOp">Serves Alcohol</button>
+            <button id="open" class="filterOp">Open Now</button>
+        </div>
+
+    <div class="modal-overlay" id="filterPOP">
+        <div class="filter-modal">
+
+            <div class="filter-header">
+                <h2>Filters</h2>
+                <button class="close-btn" id="close-btn">&times;</button>
+            </div>
+
+            <div class="filter-content">
+
+                <div class="filter-section">
+                    <h3>Sort by</h3>
+                        <label class="radio-label">
+                            <input type="radio" name="sortBy" value="rating">
+                            <span class="radio-custom"></span>
+                            Rating: High to Low
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="sortBy" value="costLowHigh">
+                            <span class="radio-custom"></span>
+                            Cost: Low to High
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="sortBy" value="costHighLow">
+                            <span class="radio-custom"></span>
+                            Cost: High to Low
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="sortBy" value="distance">
+                            <span class="radio-custom"></span>
+                            Distance
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-footer">
+                    <button class="clear-btn" id="clear-btn">Clear all</button>
+                    <button class="apply-btn" id="apply-btn" >Apply</button>
+                </div>
+        </div>
+    </div>
+
+
+
+
+        <div id="offerImg">
+            <img src="./Media/offer.png" alt="" id="offUpto">
+        </div>
+
+        <div id="cardContainer">
+            <p>Best Food in Delhi NCR</p>
+        </div>
+
+        
+        <section class="bestfood" id="root">
+
+        </section>
+
+
+
+    </main>  
+
+
+    <script src="./Zomato.js"></script>
+    
+    
+
+
+
+</body>
+</html>
