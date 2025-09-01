@@ -1,68 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixle Pulse: Digital Clock</title>
-    <link rel="stylesheet" href="./PixelPulse.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixle Pulse: Digital Clock</title>
+  <link rel="stylesheet" href="./PixelPulse.css"/>
 </head>
 <body>
-    <div id="container">
-        <h1 id="title">
-            Pixle Pulse
-        </h1>
-        <nav id="nav">
-            <button id="hb">Home</button>
-            <button id="sb">Stopwatch</button>
-        </nav>
+  <div id="container">
 
-        <div id="box">
-            <div id="home" class="show">
-                <div id="time">
-                    <div id="hr1">H</div>
-                    <div id="hr2">H</div>
-                    <div id="colon1">:</div>
-                    <div id="min1">M</div>
-                    <div id="min2">M</div>
-                    <div id="colon2">:</div>
-                    <div id="sec1">S</div>
-                    <div id="sec2">S</div>
-                </div>
-                <div id="date">
-                    <p id="today">asfasdf</p>
-                </div>
-            </div>
-            
-            <div id="stopwatch" class="show">
+    <h1 id="title">Pixle Pulse</h1>
 
-            </div>
+    <nav id="nav">
+      <button id="hb">Home</button>
+      <button id="sb">Stopwatch</button>
+    </nav>
+
+    <div id="box">
+      <!-- Digital Clock -->
+      <div id="home" class="show">
+        <div id="time">
+          <div id="hr1">H</div>
+          <div id="hr2">H</div>
+          <div id="colon1">:</div>
+          <div id="min1">M</div>
+          <div id="min2">M</div>
+          <div id="colon2">:</div>
+          <div id="sec1">S</div>
+          <div id="sec2">S</div>
         </div>
-
-        <div id="stopwatch" class="show">
-            <div id="home" class="show">
-                <div id="time">
-                    <div id="hr1">0</div>
-                    <div id="hr2">0</div>
-                    <div id="colon1">:</div>
-                    <div id="min1">0</div>
-                    <div id="min2">0</div>
-                    <div id="colon2" style="align-items: end;">.</div>
-                    <div id="sec1">0</div>
-                    <div id="sec2">0</div>
-                </div>
-                <div id="date">
-                    <button id="Flag">Lap</button>
-                    <button id="Reset">Reset</button>
-                    <button id="Start">Start</button>
-                    <button id="Pause">Pause</button>
-                </div>
-                <div id="lap">
-                </div>
+        <div id="date">
+          <p id="today">Current:</p>
         </div>
+      </div>
 
+      <!-- Stopwatch -->
+      <div id="stopwatch" class="show">
+        <!-- Stopwatch UI created dynamically via JS -->
+      </div>
     </div>
+  </div>
 
-
-    <script src="./PixelPulse.js"></script>
+  <script src="./PixelPulse.js"></script>
 </body>
 </html>
