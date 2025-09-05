@@ -1,0 +1,18 @@
+{
+  "name": "myntra",
+  "version": "1.0.0",
+  "description": "cloning-myntra",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parth",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}

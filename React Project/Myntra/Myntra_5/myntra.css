@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    background-color: whitesmoke;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navhead{
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+}
+
+#mainnav{
+    padding: 1rem;
+    background-color: white;
+
+    grid-row: 1/4;
+
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    gap: 1rem;
+}
+
+#filter{
+    background-color: whitesmoke;
+    grid-row: 4/6;
+    padding: 0.5rem;
+
+    margin-top: 0.5rem;
+
+}
+#filter button{
+    padding: 0.5rem;
+    position: relative;
+    left: 10vh;
+
+    font-size: large;
+    margin-right: 2rem;
+
+}
+
+#img{
+    width: 100%;
+    grid-column: 1/4;
+    cursor: pointer;
+}
+#options{
+    width: 100%;
+
+    grid-column: 4/15;
+
+    /* background-color: black; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  
+}
+#search{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(232, 227, 227);
+
+    height: 65%;
+    width: 100%;
+    /* margin-left: 8rem; */
+    grid-column: 16/25;
+
+    border: none;
+}
+#user{
+    grid-column: 25/30;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+#options button{
+    height: 100%;
+    width: 50%;
+
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom: 5px solid white;
+
+}
+#options button:hover{
+    border-color: crimson;
+}
+
+
+#user button{
+    height: 100%;
+    width: 50%;
+
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom: 5px solid white;
+}
+#user button:hover{
+    border-color: crimson;
+}
+
+
+
+
+#bodyCard{
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 1rem;
+}
+
+.card1{
+    border: 8px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+}
+.card1:hover{
+    cursor: pointer;
+    border-color: rgb(68, 157, 246);
+    background-color: rgb(68, 157, 246);
+
+    color: greenyellow;
+}
+
+
+
+
