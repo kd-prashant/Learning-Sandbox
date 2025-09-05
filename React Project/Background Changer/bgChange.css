@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#container{
+
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+  color: white;
+  animation: backgroundColorChange 12s ease infinite;
+  transition: background-color 4s ease;
+
+  border-radius: 20px;
+
+} 
+ @keyframes backgroundColorChange {
+  0% { background-color: #ff5f6d; }      
+  14% { background-color: #ffc371; }    
+  28% { background-color: #47cacc; }    
+  42% { background-color: #7b2ff7; }     
+  57% { background-color: #f7971e; }    
+  71% { background-color: #1fa2ff; }   
+  85% { background-color: #ff6a88; }    
+  100% { background-color: #ff5f6d; } 
+}
+
+
+
+
+#bgop button{
+    box-sizing: content-box;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+
+    border: 5px solid white;
+    border-style:ridge;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+button{
+    outline: none;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease;
+}
+button:active {
+    background: #999;
+    transform: translateY(2px);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+
+@keyframes button-press {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(4px); }
+    100% { transform: translateY(1px); }
+}
+
+button:active {
+    animation: button-press 0.15s forwards;
+}
+
+
+
+
+
+#count{
+    color: black;
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#incr{
+    padding: 0.2rem;
+    font-weight: bold;
+}
