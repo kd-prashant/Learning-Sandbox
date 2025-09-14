@@ -15,7 +15,22 @@ let obj= {
 
     true: [34,12,true,{1:2, 4:5, 10:12}]
 }
+console.log(Object.keys(obj));              //Return Array
+console.log(Object.entries(obj))
+
+let valueArr= Object.values(obj);
+console.log(valueArr);
+
+console.log(Array.isArray(valueArr));
+valueArr[0].fun();
+
+
+console.log(valueArr[3].at(3))
+console.log();
+console.log();
+
 console.log(obj[10].fun());
+
 
 
 // Class
@@ -28,3 +43,11 @@ class objStruct{
 }
 let user1= new objStruct("Denver", 67, "Male");
 console.log(user1);
+
+
+
+
+// 
+let objAssign={};
+Object.assign(objAssign, obj,user1);
+console.log(objAssign);
